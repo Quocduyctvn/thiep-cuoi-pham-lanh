@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Đám Cưới - Nguyễn Quốc Duy & Phạm Thị Lanh</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pt-0">
+    <!-- Audio enable overlay -->
+    <div id="audioEnableOverlay">
+        <span>Lời đầu tiên - Dâu & Rể xin gửi lời chào trân trọng và lời cảm ơn chân thành đến Quý khách đã dành thời gian ghé thăm.
+            <br> Kính chúc Quý khách cùng gia đình luôn mạnh khỏe - hạnh phúc và thành công. </span>
+        <button  class="mt-4" id="playAudioButton">💌 XEM THƯ MỜI NGAY 💌</button>
+    </div>
+
+    <!-- Audio control button -->
+    <div class="audio-control" id="audioControl">
+        <i class="bi bi-volume-up-fill"></i>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="./audio/XungDoiCuoiThoi.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phần tử âm thanh.
+    </audio>
+
+    <!-- Chinese Knot Decorations Left -->
+    <div class="knot-left">
+        <img src="imgs/con-rong-2.png" class="double-happiness" width="240" >
+    </div>
+
+    <!-- Chinese Knot Decorations Right -->
+    <div class="knot-right">
+        <img src="imgs/con-phung.png" class="double-happiness" width="240" >
+        <!-- <div class="knot-top">🧧</div>
+        <div class="knot-middle">Bạc</div>
+        <div class="knot-middle">Đầu</div>
+        <div class="knot-middle">Nghĩa</div>
+        <div class="knot-middle">Phu</div>
+        <div class="knot-middle">Thê</div>
+        <div class="knot-bottom">🧧</div> -->
+    </div>
+
+    <!-- Full-page Loading Overlay -->
+    <div id="fullPageLoadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Đang gửi lời chúc...</p>
+    </div>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-section" data-aos="fade-down" data-aos-duration="800">
+            <h3 class="mb-0 mt-2">
+                <!-- <img src="imgs/anh-hy.png" class="double-happiness" width="60" > -->
+               🧧 THÔNG TIN LỄ CƯỚI 🧧
+                <!-- <img src="imgs/anh-hy.png" class="double-happiness" width="60" > -->
+            </h3>
+        </div>
+        
+        <!-- CONTENT -->
+        <div class="content">
+            <!-- PARENTS INFO -->
+            <div class="parents-section" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                
+                <div class="parent-group">
+                    <div class="mb-0 fs-5" style="margin:0;line-height:1;">Gia đình nhà gái </div>
+                    <img src="imgs/line-role.png" class="double-happiness" width="270" >
+                    <div class="name text-uppercase">Ông: Phạm Văn Be</div>
+                    <div class="name text-uppercase">Bà: Đỗ Thị Lài</div>
+                    <div class="mb-1">Địa chỉ: Ấp 3 Khánh Thuận, X U Minh, TP Cà Mau</div>
+                    <div class="mb-1">Địa chỉ Mới: Ấp 18, X U Minh, TP Cà Mau</div>
+                </div>
+                <div class="parent-group">
+                    <div class="mb-0 fs-5" style="margin:0;line-height:1;">Gia đình nhà trai </div>
+                    <img src="imgs/line-role.png" class="double-happiness" width="270" >
+                    <div class="name text-uppercase">Ông: Nguyễn Văn Luối</div>
+                    <div class="name text-uppercase">Bà: Nguyễn Mỹ Linh</div>
+                    <div  class="mb-1">Địa chỉ: Ấp Định Thành, X Định Môn, H Thới Lai, TPCT</div>
+                    <div class="mb-1">Đc Mới: Ấp Định Thành, X Trương Thành, TPCT</div>
+                </div>
+                
+            </div>
+            
+            <div class="divider"></div>
+            
+            <!-- INVITATION TEXT -->
+            <div class="invitation-text" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+                <div class="intro">TRÂN TRỌNG BÁO TIN<br><span class="fw-bold fs-4">LỄ THÀNH HÔN CỦA CON CHÚNG TÔI</span></div>
+                
+                <div class="couple-names mt-2">
+                    <span class="bride-label">ÚT NỮ: </span>
+                    <div>
+                        <span  class="groom-name">Phạm Thị Lanh</span>
+                     </div>
+                    <div class="amp">
+                        <i class="bi bi-heart-fill fs-3 text-danger"></i>
+                    </div>
+                    <span class="bride-label">ÚT NAM: </span>
+                    <div>
+                        <span  class="groom-name">Nguyễn Quốc Duy</span>
+                     </div>
+                </div>
+                
+            </div>
+            
+            <!-- CEREMONY TIME -->
+            <div class="section-header">THÔNG TIN TIỆC CƯỚI</div>
+            
+            <div class="ceremony-info" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                <h3 class="mb-0">TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:</h3>
+                <div class="time-display">15:00</div>
+                
+                <div class="month">THỨ TƯ </span>
+                <div class="date-display">
+                    <span class="month"> Ngày </span>
+                    <span class="day">24</span>
+                    <span >THÁNG </span>
+                    <span class="day">6</span>
+                    <span>NĂM </span>
+                    <span class="day"> 2026</span>
+                </div>
+                <div class="lunar-date">(Tức ngày 10/05 năm Bính Ngọ)</div>
+            </div>
+
+            <!-- COUNTDOWN -->
+            <div class="countdown" data-aos="pulse" data-aos-duration="1000" data-aos-delay="400">
+                <div class="countdown-label mb-0">CÙNG ĐẾM NGƯỢC</div>
+                <div class="countdown-value" id="countdownTimer">14 ngày 23 giờ 37 phút 47 giây</div>
+            </div>
+
+            <!-- ALBUM ẢNHS CƯỚI -->
+            <div class="section-header mt-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">ALBUM ẢNH CƯỚI</div>
+            
+            <div class="album-section mt-4">
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                        <div class="gallery-card animate-card animate-delay-1">
+                            <img src="imgs\1-t.png" alt="Ảnh cưới 1" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Code dạo nay đã có vợ (●'◡'●)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="gallery-card animate-card animate-delay-2">
+                            <img src="imgs/1.d.png" alt="Ảnh cưới 2" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Nhà trai chốt đơn thành công ✅</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="gallery-card animate-card animate-delay-3">
+                            <img src="imgs/dn-1.jpg" alt="Ảnh cưới 4" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Định mệnh gọi tên hai đứa ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="gallery-card animate-card animate-delay-4">
+                            <img src="imgs/dn-2.jpg" alt="Ảnh cưới 5" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Đang tập làm người lớn có gia đình 😁</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="gallery-card animate-card animate-delay-5">
+                            <img src="imgs/3-t.png" alt="Ảnh cưới 5" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Yêu nhau đủ rồi, cưới thôi 😘</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                        <div class="gallery-card animate-card animate-delay-6">
+                            <img src="imgs/3.d.png" alt="Ảnh cưới 6" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>5 giây trước khi ký hợp đồng trọn đời ❤️</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="gallery-card animate-card animate-delay-7">
+                            <img src="imgs/dn-3.jpg" alt="Ảnh cưới 6" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Hồi đó lướt ngang, giờ về chung nhà 🤭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+                        <div class="gallery-card">
+                            <img src="imgs/4-t.png" alt="Ảnh cưới 4" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Rước được cổ về là thắng lớn rồi 🏆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="gallery-card">
+                            <img src="imgs/dn-4.png" alt="Ảnh cưới 5" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Từ nay cơm nhà là chân ái 🍚</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                        <div class="gallery-card">
+                            <img src="imgs/4.d.png" alt="Ảnh cưới 5" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Hết ý tưởng 1....<br> (●'◡'●)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="gallery-card">
+                            <img src="imgs/dn-5.png" alt="Ảnh cưới 5" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Hết ý tưởng 2.... <br> (❁´◡`❁)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="1100">
+                        <div class="gallery-card">
+                            <img src="imgs/5-t.png" alt="Ảnh cưới 6" class="img-fluid">
+                            <div class="gallery-overlay">
+                                <span>Hết ý tưởng 3.... <br> (◕‿◕)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOCATION -->
+            <div class="section-header mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</div>
+            <div class="location-section mt-2" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d996.1807567512429!2d105.58570826956822!3d10.061665319857191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDAzJzQyLjAiTiAxMDXCsDM1JzEwLjkiRQ!5e1!3m2!1svi!2sus!4v1781062504632!5m2!1svi!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+               
+            </div>
+        </div>
+        
+            <!-- WISHES FORM -->
+            <div class="section-header mt-1 mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                SỔ LƯU BÚT - GHÉ QUA RỒI THÌ HÃY ĐỂ LẠI VÀI CHỮ NHÉ
+                <br>Dâu Rễ xin cảm ơn Quý khách😘
+            </div>
+           <div class="row justify-content-center">
+                <div class="col-12 ">
+                    <form name="submit-to-google-sheet" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+                         <div class="form-group">
+                            <div for="name">Tên Quý khách:</div>
+                             <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <div for="message">Nội dung của quý khách gửi đến - Dâu Rễ: </div>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class=" text-center" id="submitButton"><i class="bi bi-send-fill me-2"></i>GỬI LỜI CHÚC</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            💕 Sự hiện diện của Quý Ông Bà, Cô Chú, Anh Chị Em, Bạn Bè và Đồng Nghiệp trong ngày thành hôn của con/em là niềm vinh hạnh lớn lao. Xin chân thành cảm ơn và kính chúc quý vị luôn dồi dào sức khỏe, hạnh phúc và thành công.
+            💕
+        </div>
+    </div>
+        <!-- Falling Flowers -->
+
+
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake fs-2">❅</div>
+        <div class="snowflake fs-2">❅</div>
+        <div class="snowflake">🌺</div>
+        <div class="snowflake fs-2">🌺</div>
+        <div class="snowflake fs-1">🌺</div>
+        <div class="snowflake fs-1">🌺</div>
+        <div class="snowflake fs-1">🌺</div>
+        <div class="snowflake fs-1">🌺</div>
+        <div class="snowflake">❆</div>
+
+        <div class="snowflake fs-2" style="color: #ddbc03">❀</div>
+        <div class="snowflake  fs-2" style="color: #ba8f00">✿</div>
+
+        <div class="snowflake fs-2">🌸</div>
+
+        <div class="snowflake">✾</div>
+        <div class="snowflake fs-2">🌸</div>
+        <div class="snowflake">🌺</div>
+    </div>
+    
+    <div class="text-center">© 2026 Code dạo - Quốc Duy.</div>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out-quad',
+            once: true
+        });
+    </script>
+    
+    <!-- Countdown Timer Script -->
+    <script>
+        function updateCountdown() {
+            // Ngày cưới: 24/06/2026 lúc 09:30
+            const weddingDate = new Date(2026, 5, 24, 9, 30, 0); // Tháng là 0-indexed nên 5 = tháng 6
+            const now = new Date();
+            
+            const diff = weddingDate - now;
+            
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                const countdownText = `${days} ngày ${hours} giờ ${minutes} phút ${seconds} giây`;
+                document.getElementById('countdownTimer').textContent = countdownText;
+            } else {
+                document.getElementById('countdownTimer').textContent = 'Đám cưới đã diễn ra! 💕';
+            }
+        }
+        
+        // Cập nhật countdown ngay khi trang load
+        updateCountdown();
+        
+        // Cập nhật countdown mỗi giây
+        setInterval(updateCountdown, 1000);
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxR6t8TxG-d2bWvTguumMzqh8NKjjOnAkteae21AOiAU2XKbQh5hYC12Ed0-SydB5RzBg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const submitButton = document.getElementById('submitButton');
+        const fullPageLoadingOverlay = document.getElementById('fullPageLoadingOverlay'); // Lấy lớp phủ tải toàn trang
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          submitButton.disabled = true; // Vô hiệu hóa nút
+          fullPageLoadingOverlay.style.display = 'flex'; // Hiển thị lớp phủ tải toàn trang
+
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              alert("Lời chúc của bạn đã được gửi đi!")
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+            .finally(() => {
+                submitButton.disabled = false; // Kích hoạt lại nút
+                fullPageLoadingOverlay.style.display = 'none'; // Ẩn lớp phủ tải toàn trang
+            });
+        })
+    </script>
+    <!-- Audio Playback Script -->
+    <script>
+        const backgroundMusic = document.getElementById('background-music');
+        const audioControl = document.getElementById('audioControl');
+        const audioEnableOverlay = document.getElementById('audioEnableOverlay');
+        const playAudioButton = document.getElementById('playAudioButton');
+
+        const tryPlayMusic = () => {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play().then(() => {
+                    audioControl.querySelector('i').classList.remove('bi-volume-mute-fill');
+                    audioControl.querySelector('i').classList.add('bi-volume-up-fill');
+                    audioControl.classList.add('is-playing'); // Thêm class is-playing
+                    audioEnableOverlay.style.display = 'none'; // Ẩn lớp phủ khi nhạc bắt đầu phát
+                }).catch(error => {
+                    console.log("Autoplay prevented. User interaction required to play music.");
+                    audioControl.querySelector('i').classList.remove('bi-volume-up-fill');
+                    audioControl.querySelector('i').classList.add('bi-volume-mute-fill');
+                    // Giữ lớp phủ hiển thị nếu không thể phát tự động
+                    audioEnableOverlay.style.display = 'flex';
+                });
+            }
+        };
+
+        // Hiển thị lớp phủ khi tải trang
+        window.addEventListener('load', () => {
+            audioEnableOverlay.style.display = 'flex';
+        });
+
+        // Xử lý khi nhấp vào nút 'Bật nhạc' hoặc lớp phủ
+        playAudioButton.addEventListener('click', tryPlayMusic);
+        audioEnableOverlay.addEventListener('click', (e) => {
+            // Đảm bảo rằng việc nhấp vào lớp phủ không phải là nhấp vào nút
+            if (e.target.id === 'audioEnableOverlay') {
+                tryPlayMusic();
+            }
+        });
+
+        // Toggle play/pause on main audio control button click
+        audioControl.addEventListener('click', () => {
+            if (backgroundMusic.paused) {
+                backgroundMusic.play();
+                audioControl.querySelector('i').classList.remove('bi-volume-mute-fill');
+                audioControl.querySelector('i').classList.add('bi-volume-up-fill');
+                audioControl.classList.add('is-playing'); // Thêm class is-playing
+            } else {
+                backgroundMusic.pause();
+                audioControl.querySelector('i').classList.remove('bi-volume-up-fill');
+                audioControl.querySelector('i').classList.add('bi-volume-mute-fill');
+                audioControl.classList.remove('is-playing'); // Xóa class is-playing
+            }
+        });
+    </script>
+</body>
+</html>
