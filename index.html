@@ -306,6 +306,32 @@
     
     <div class="text-center">© 2026 Code dạo - Quốc Duy.</div>
     <!-- Bootstrap JS Bundle -->
+    <script>
+        document.body.addEventListener('click', function(e) {
+            const x = e.clientX; // X position relative to the viewport
+            const y = e.clientY;  // Y position relative to the viewport
+
+            for (let i = 0; i < 40; i++) { // Create 40 hearts
+                const heart = document.createElement('div');
+                heart.classList.add('heart-burst');
+                heart.style.left = `${x}px`;
+                heart.style.top = `${y + window.scrollY}px`; // Add scrollY here
+                document.body.appendChild(heart);
+
+                // Animate hearts
+                heart.animate([
+                    { transform: 'translate(-50%, -50%) scale(0)', opacity: 1 },
+                    { transform: `translate(${-50 + (Math.random() - 0.5) * 150}px, ${-50 - (Math.random() * 400 + 100)}px) scale(1)`, opacity: 0 }
+                ], {
+                    duration: Math.random() * 2000 + 2000, // 2 to 4 seconds
+                    easing: 'ease-out',
+                    fill: 'forwards'
+                }).onfinish = () => {
+                    heart.remove();
+                };
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

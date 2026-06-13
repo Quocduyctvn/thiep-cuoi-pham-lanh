@@ -841,3 +841,22 @@ form button[type="submit"]:active {
 .audio-control.is-playing {
     animation: shake 1.2s ease-in-out infinite;
 }
+
+/* Heart Burst Effect */
+.heart-burst {
+    position: absolute;
+    font-size: 2em; /* Size of the heart */
+    color: #ff69b4; /* Pink heart color */
+    pointer-events: none; /* Allow clicks to pass through */
+    opacity: 0;
+    user-select: none;
+    z-index: 9999;
+}
+
+.heart-burst::before {
+    content: '❤️'; /* The heart character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%); /* Center the heart on the click */
+}
