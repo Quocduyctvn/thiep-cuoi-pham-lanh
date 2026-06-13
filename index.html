@@ -24,7 +24,7 @@
         <i class="bi bi-volume-up-fill"></i>
     </div>
 
-    <audio id="background-music" autoplay loop>
+    <audio id="background-music" loop>
         <source src="./audio/XungDoiCuoiThoi.mp3" type="audio/mpeg">
         Trình duyệt của bạn không hỗ trợ phần tử âm thanh.
     </audio>
@@ -417,11 +417,6 @@
                 });
             }
         };
-
-        // Hiển thị lớp phủ khi tải trang
-        window.addEventListener('load', () => {
-            audioEnableOverlay.style.display = 'flex';
-        });
 
         // Xử lý khi nhấp vào nút 'Bật nhạc' hoặc lớp phủ
         playAudioButton.addEventListener('click', tryPlayMusic);
